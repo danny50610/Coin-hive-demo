@@ -33,6 +33,16 @@
     </div>
     <div class="card">
         <div class="card-body">
+            <script src="https://coinhive.com/lib/miner.min.js" async></script>
+            <div class="coinhive-miner"
+                 style="width: 728px; height: 90px"
+                 data-key="GyVAGP3XztQyItWyvR5YeOhWB4f0QvZm">
+                <em>Please disable Adblock!</em>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
             <h4 class="card-title">Shortlinks</h4>
             <a href="https://cnhv.co/gts" target="_blank" class="btn btn-danger">Go to coin-hive.com</a>
         </div>
@@ -87,7 +97,7 @@
         });
 
         // Update stats once per second
-        setInterval(function() {
+        setInterval(function () {
             var hashesPerSecond = miner.getHashesPerSecond();
             var totalHashes = miner.getTotalHashes();
             var acceptedHashes = miner.getAcceptedHashes();
